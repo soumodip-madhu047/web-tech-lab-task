@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+</head>
+<body>
+    <h1>University Admission Form</h1>
+    
+    <form action="#" method="post">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <div>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required maxlength="100">
+            </div>
+            
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required maxlength="15">
+            </div>
+            
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            
+            <div>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required maxlength="200"></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Academic Information Section -->
+        <fieldset>
+            <legend>Academic Information</legend>
+            
+            <div>
+                <label for="previousSchool">Previous School/College:</label>
+                <input type="text" id="previousSchool" name="previousSchool" required maxlength="150">
+            </div>
+            
+            <div>
+                <label for="graduationYear">Year of Graduation:</label>
+                <input type="text" id="graduationYear" name="graduationYear" required maxlength="4">
+            </div>
+            
+            <div>
+                <label for="gpa">GPA/CGPA:</label>
+                <input type="text" id="gpa" name="gpa" required maxlength="5">
+            </div>
+            
+            <div>
+                <label>Interests (Select all that apply):</label><br>
+                <input type="checkbox" id="research" name="interests" value="research">
+                <label for="research">Research</label><br>
+                
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label><br>
+                
+                <input type="checkbox" id="arts" name="interests" value="arts">
+                <label for="arts">Arts & Culture</label><br>
+                
+                <input type="checkbox" id="technology" name="interests" value="technology">
+                <label for="technology">Technology</label><br>
+                
+                <input type="checkbox" id="volunteering" name="interests" value="volunteering">
+                <label for="volunteering">Volunteering</label>
+            </div>
+        </fieldset>
+
+        <!-- Course Selection Section -->
+        <fieldset>
+            <legend>Course Selection</legend>
+            
+            <div>
+                <label for="department">Preferred Department:</label>
+                <select id="department" name="department" required>
+                    <option value="" disabled selected>Select Department</option>
+                    <option value="computer_science">Computer Science</option>
+                    <option value="electrical_engineering">Electrical Engineering</option>
+                    <option value="mechanical_engineering">Mechanical Engineering</option>
+                    <option value="business_administration">Business Administration</option>
+                    <option value="economics">Economics</option>
+                    <option value="english">English</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="program">Program Type:</label>
+                <select id="program" name="program" required>
+                    <option value="" disabled selected>Select Program</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="phd">PhD</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="semester">Preferred Semester:</label>
+                <select id="semester" name="semester" required>
+                    <option value="" disabled selected>Select Semester</option>
+                    <option value="fall">Fall</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- Documents Upload Section -->
+        <fieldset>
+            <legend>Required Documents</legend>
+            
+            <div>
+                <label for="transcript">Academic Transcript:</label>
+                <input type="file" id="transcript" name="transcript" required>
+            </div>
+            
+            <div>
+                <label for="photo">Passport Size Photo:</label>
+                <input type="file" id="photo" name="photo" required>
+            </div>
+            
+            <div>
+                <label for="idProof">ID Proof:</label>
+                <input type="file" id="idProof" name="idProof" required>
+            </div>
+            
+            <div>
+                <label for="certificates">Other Certificates (if any):</label>
+                <input type="file" id="certificates" name="certificates">
+            </div>
+        </fieldset>
+
+        <!-- Form Buttons -->
+        <div>
+            <button type="submit">Submit Application</button>
+            <button type="reset">Reset Form</button>
+        </div>
+    </form>
+</body>
+</html>
