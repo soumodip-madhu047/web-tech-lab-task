@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .product-container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .product-box {
+            display: inline-block;
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            vertical-align: top;
+            transition: all 0.3s ease;
+        }
+
+        .product-box:hover {
+            outline: 3px solid #3498db;
+            outline-offset: 5px;
+        }
+
+        .product-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-name {
+            color: #2c3e50;
+            margin: 10px 0;
+            font-size: 1.4em;
+        }
+
+        .product-description {
+            color: #666;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        .product-price {
+            color: #e74c3c;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .buy-now {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-now:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Featured Products</h1>
+    
+    <div class="product-container">
+        <!-- Laptop Product -->
+        <div class="product-box">
+            <img src="https://smartbd.com/wp-content/uploads/2025/04/HP-Victus-Gaming-16-r1237TX-Laptop.jpg" alt="Laptop" class="product-image">
+            <h2 class="product-name">Victus f15 Pro</h2>
+            <p class="product-description">Gaming laptop RTX graphics, 16GB RAM, and 1TB SSD storage.</p>
+            <div class="product-price">$1,299.99</div>
+            <a href="#" class="buy-now">Buy Now</a>
+        </div>
+
+        <!-- Headphones Product -->
+        <div class="product-box">
+            <img src="https://assets.gadgetandgear.com/upload/media/huawei-freebuds-pro-4-anc-earbuds-black803.jpeg" alt="Headphones" class="product-image">
+            <h2 class="product-name">Huawei freebuds pro 4</h2>
+            <p class="product-description">Premium wireless headphones with noise cancellation, 30-hour battery life.</p>
+            <div class="product-price">$199.99</div>
+            <a href="#" class="buy-now">Buy Now</a>
+        </div>
+
+        <!-- Smartwatch Product -->
+        <div class="product-box">
+            <img src="https://www.applegadgetsbd.com/_next/image?url=https%3A%2F%2Fadminapi.applegadgetsbd.com%2Fstorage%2Fmedia%2Flarge%2FApple-Watch-Series-10-Aluminum-Silver-7765.jpg&w=3840&q=100" alt="Smartwatch" class="product-image">
+            <h2 class="product-name">Apple Watch</h2>
+            <p class="product-description">Advanced smartwatch with health monitoring, GPS, waterproof design.</p>
+            <div class="product-price">$349.99</div>
+            <a href="#" class="buy-now">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>

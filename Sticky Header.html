@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            border-bottom: 3px solid #3498db;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .site-title {
+            margin: 0;
+            font-size: 1.8em;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: #3498db;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 80px auto 40px;
+            padding: 0 20px;
+        }
+
+        .article {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+        }
+
+        .article h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="site-title">Techland</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+
+        <div class="article">
+            <h2>Web Development Trends to Watch</h2>
+            <p>The web development landscape is constantly evolving, with new frameworks and tools emerging regularly. React and Vue.js continue to dominate the frontend space, while Node.js maintains its popularity for backend development.</p>
+            <p>Progressive Web Apps (PWAs) are becoming increasingly important as they bridge the gap between web and mobile applications. The focus on performance optimization and core web vitals has never been more critical.</p>
+            <p>Serverless architecture and Jamstack are reshaping how developers build and deploy applications. These approaches offer improved scalability and reduced infrastructure management overhead.</p>
+            <p>Accessibility and inclusive design are no longer optional but essential components of modern web development. Developers are prioritizing user experience across all devices and abilities.</p>
+        </div>
+
+        <div class="article">
+            <h2>Cybersecurity in the Modern Digital Age</h2>
+            <p>With the increasing digitization of services, cybersecurity has become a paramount concern for organizations worldwide. Cyber threats are becoming more sophisticated, targeting both individuals and large corporations.</p>
+            <p>The rise of remote work has expanded the attack surface, making endpoint security more crucial than ever. Multi-factor authentication and zero-trust architecture are becoming standard practices.</p>
+            <p>Artificial intelligence is playing a dual role in cybersecurity - both as a tool for defenders and as a weapon for attackers. AI-powered security systems can detect anomalies and potential threats in real-time.</p>
+            <p>Data privacy regulations like GDPR and CCPA are forcing organizations to rethink their data handling practices. Compliance and data protection are now integral parts of business operations.</p>
+        </div>
+
+        <div class="article">
+            <h2>The Impact of 5G Technology</h2>
+            <p>5G technology is set to transform how we connect and communicate, offering significantly faster speeds and lower latency than previous generations. This advancement opens up new possibilities for various applications.</p>
+            <p>Internet of Things (IoT) devices will benefit greatly from 5G connectivity, enabling more reliable and efficient communication between devices. Smart cities and autonomous vehicles will become more feasible with robust 5G networks.</p>
+            <p>The healthcare industry stands to gain from 5G through improved telemedicine services and remote patient monitoring. Real-time data transmission will enhance diagnostic capabilities and emergency response times.</p>
+            <p>While 5G deployment continues globally, concerns about infrastructure costs and security remain. However, the potential benefits for economic growth and technological innovation are substantial.</p>
+        </div>
+    </main>
+</body>
+</html>
