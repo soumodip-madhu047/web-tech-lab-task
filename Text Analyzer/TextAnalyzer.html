@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer</title>
+</head>
+<body>
+    <h1>Text Analysis Tool</h1>
+    
+    <div>
+        <textarea id="text-input" rows="10" cols="60" placeholder="Paste or type your text here..."></textarea>
+    </div>
+    
+    <div>
+        <button id="analyze-btn">Analyze Text</button>
+    </div>
+    
+    <div id="results" style="display: none; margin-top: 20px; padding: 15px; border: 1px solid #ccc; background-color: #f9f9f9;">
+        <h2>Analysis Results</h2>
+        <p><strong>Total Characters:</strong> <span id="char-count">0</span></p>
+        <p><strong>Total Words:</strong> <span id="word-count">0</span></p>
+        <p><strong>Reversed Text:</strong></p>
+        <div id="reversed-text" style="padding: 10px; background-color: white; border: 1px solid #ddd; min-height: 50px;"></div>
+    </div>
+
+    <script src="TextAnalyzer.js"></script>
+</body>
+</html>

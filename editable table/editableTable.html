@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+</head>
+<body>
+    <h1>Student Management System</h1>
+    
+    <div>
+        <h2>Add New Student</h2>
+        <div>
+            <input type="text" id="name" placeholder="Student Name">
+            <input type="text" id="roll" placeholder="Roll Number">
+            <input type="text" id="department" placeholder="Department">
+            <button id="add-btn">Add Student</button>
+        </div>
+        <p id="error-msg" style="color: red;"></p>
+    </div>
+
+    <div>
+        <h2>Student Records</h2>
+        <table id="student-table" border="1" style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll</th>
+                    <th>Department</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+               
+            </tbody>
+        </table>
+        <p id="no-data">No students added yet.</p>
+    </div>
+
+    <script src="editableTable.js"></script>
+</body>
+</html>
