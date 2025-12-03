@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Portfolio Project.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1>Soumodip Madhu</h1>
+                <button id="theme-toggle">🌙 Dark Mode</button>
+            </div>
+            
+            <div class="greeting" id="greeting"></div>
+            
+            <nav>
+                <button class="nav-btn active" data-section="about">About</button>
+                <button class="nav-btn" data-section="projects">Projects</button>
+                <button class="nav-btn" data-section="contact">Contact</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about-section" class="content-section active">
+                <h2>About Me</h2>
+                <p>Hello! I'm a passionate web developer currently pursuing Computer Science at AIUB. I love creating interactive and user-friendly websites.</p>
+                <p>Skills: HTML, CSS, JavaScript, React, Node.js</p>
+            </section>
+
+            <section id="projects-section" class="content-section">
+                <h2>My Projects</h2>
+                <div class="project">
+                    <h3>E-commerce Website</h3>
+                    <p>A full-featured online shopping platform with user authentication and payment processing.</p>
+                </div>
+                <div class="project">
+                    <h3>Task Management App</h3>
+                    <p>A productivity application for managing daily tasks with drag-and-drop functionality.</p>
+                </div>
+                <div class="project">
+                    <h3>Weather Dashboard</h3>
+                    <p>A responsive weather application that displays current conditions and forecasts.</p>
+                </div>
+            </section>
+
+            <section id="contact-section" class="content-section">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name">
+                        <div class="error" id="name-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email">
+                        <div class="error" id="email-error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="4"></textarea>
+                        <div class="error" id="message-error"></div>
+                    </div>
+                    
+                    <button type="submit">Send Message</button>
+                    <div id="form-message"></div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Soumodip Madhu </p>
+        </footer>
+    </div>
+
+    <script src="Portfolio Project.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Handling</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            border: 2px solid #01070a;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .box-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        .visible {
+            overflow: visible;
+        }
+        .hidden {
+            overflow: hidden;
+        }
+        .scroll {
+            overflow: scroll;
+        }
+        .auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow Handling Property</h1>
+    
+    <div class="container">
+        <!-- Visible Overflow -->
+        <div class="box visible">
+            <div class="box-title">overflow: visible</div>
+            <p>Sukuna's true body is that of a tall, muscular man with four arms, four eyes, and a large mouth on his midriff. He has short pink-red hair and red eyes. His two right eyes are angled differently and located on a white plate-like structure made of flesh on the right side of his face. His body is covered in tattoos, which manifest on his vessel whenever he is in control, and are naturally present in his true form. The tattoos are mostly black lines on his wrists, ankles, upper arms, upper body, abdomen, and face. Large black dots are also tattooed on each his shoulders. When these tattoos manifest on a vessel with two arms, the lines encircling the upper arms and wrists are doubled, and circles form around the black dots on the shoulders. The vessels also gain a horizontal line on the bridge of the nose, and a crown-like symbol in the middle of their forehead. Sukuna's monstrous appearance led many to describe him as a demon with four arms and two faces, although he was a mutant curse user rather than a cursed spirit.</p>
+        </div>
+
+        <!-- Hidden Overflow -->
+        <div class="box hidden">
+            <div class="box-title">overflow: hidden</div>
+            <p>Sukuna's true body is that of a tall, muscular man with four arms, four eyes, and a large mouth on his midriff. He has short pink-red hair and red eyes. His two right eyes are angled differently and located on a white plate-like structure made of flesh on the right side of his face. His body is covered in tattoos, which manifest on his vessel whenever he is in control, and are naturally present in his true form. The tattoos are mostly black lines on his wrists, ankles, upper arms, upper body, abdomen, and face. Large black dots are also tattooed on each his shoulders. When these tattoos manifest on a vessel with two arms, the lines encircling the upper arms and wrists are doubled, and circles form around the black dots on the shoulders. The vessels also gain a horizontal line on the bridge of the nose, and a crown-like symbol in the middle of their forehead. Sukuna's monstrous appearance led many to describe him as a demon with four arms and two faces, although he was a mutant curse user rather than a cursed spirit. In his true body, Sukuna most often wears only a pair of pants, as his unique torso is difficult to clothe.</p>
+        </div>
+
+        <!-- Scroll Overflow -->
+        <div class="box scroll">
+            <div class="box-title">overflow: scroll</div>
+            <p>Sukuna's true body is that of a tall, muscular man with four arms, four eyes, and a large mouth on his midriff. He has short pink-red hair and red eyes. His two right eyes are angled differently and located on a white plate-like structure made of flesh on the right side of his face. His body is covered in tattoos, which manifest on his vessel whenever he is in control, and are naturally present in his true form. The tattoos are mostly black lines on his wrists, ankles, upper arms, upper body, abdomen, and face. Large black dots are also tattooed on each his shoulders. When these tattoos manifest on a vessel with two arms, the lines encircling the upper arms and wrists are doubled, and circles form around the black dots on the shoulders. The vessels also gain a horizontal line on the bridge of the nose, and a crown-like symbol in the middle of their forehead. Sukuna's monstrous appearance led many to describe him as a demon with four arms and two faces, although he was a mutant curse user rather than a cursed spirit. In his true body, Sukuna most often wears only a pair of pants, as his unique torso is difficult to clothe.</p>
+        </div>
+
+        <!-- Auto Overflow -->
+        <div class="box auto">
+            <div class="box-title">overflow: auto</div>
+            <p>Sukuna's true body is that of a tall, muscular man with four arms, four eyes, and a large mouth on his midriff. He has short pink-red hair and red eyes. His two right eyes are angled differently and located on a white plate-like structure made of flesh on the right side of his face. His body is covered in tattoos, which manifest on his vessel whenever he is in control, and are naturally present in his true form. The tattoos are mostly black lines on his wrists, ankles, upper arms, upper body, abdomen, and face. Large black dots are also tattooed on each his shoulders. When these tattoos manifest on a vessel with two arms, the lines encircling the upper arms and wrists are doubled, and circles form around the black dots on the shoulders. The vessels also gain a horizontal line on the bridge of the nose, and a crown-like symbol in the middle of their forehead. Sukuna's monstrous appearance led many to describe him as a demon with four arms and two faces, although he was a mutant curse user rather than a cursed spirit. In his true body, Sukuna most often wears only a pair of pants, as his unique torso is difficult to clothe.</p>
+        </div>
+    </div>
+</body>
+</html>

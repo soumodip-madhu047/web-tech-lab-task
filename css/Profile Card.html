@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .user-card {
+            position: relative;
+            width: 300px;
+            background-color: white;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3498db;
+            margin-bottom: 15px;
+        }
+
+        .user-name {
+            color: #2c3e50;
+            font-size: 1.4em;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .user-bio {
+            color: #666;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .status-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #2ecc71;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="user-card">
+        <div class="status-badge">Online</div>
+        <img src="C:\Users\HP PS\Downloads\monkey-d-luffy-3840x2160-16712.jpg" alt="Profile Photo" class="profile-photo">
+        <h2 class="user-name">Soumodip Madhu</h2>
+        <p class="user-bio">Web Developer passionate about creating beautiful and functional user interfaces. Love working with modern technologies and open-source projects.</p>
+    </div>
+</body>
+</html>

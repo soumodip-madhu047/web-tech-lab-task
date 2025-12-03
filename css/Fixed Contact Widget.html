@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Widget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Contact Widget Styles */
+        .contact-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            border: 2px solid #34495e;
+            border-radius: 8px;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-widget:hover {
+            background-color: #3498db;
+        }
+
+        .contact-widget h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Demo content to show scrolling */
+        .demo-content {
+            height: 2000px;
+            background: linear-gradient(white, #f8f9fa);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to Our Company</h1>
+        <p>The 11.11 offer is going on.</p>
+        
+        <div class="demo-content">
+            <h2>Contact details given bottom right</h2>
+            <p>You can contact us through this number and email.</p>
+        </div>
+    </div>
+
+    <!-- Fixed Contact Widget -->
+    <div class="contact-widget">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+            <p>📞 <a href="tel:+880123456789">+880 1234 56789</a></p>
+            <p>✉️ <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>

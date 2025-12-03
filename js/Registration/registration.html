@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal Signup System</title>
+    <link rel="stylesheet" href="registrationStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <div class="title">AIUB Student Portal</div>
+            <h1>Create Your Account</h1>
+        </div>
+
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+                <div class="error" id="fullNameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email address">
+                <div class="error" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password (min. 6 characters)">
+                <div class="error" id="passwordError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+                <div class="error" id="confirmPasswordError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" id="phoneNumber" placeholder="Enter your phone number">
+                <div class="error" id="phoneNumberError"></div>
+            </div>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            Registration Successful!
+        </div>
+    </div>
+
+    <script src="registrationScript.js"></script>
+</body>
+</html>

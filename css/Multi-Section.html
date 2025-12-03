@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 0;
+        }
+
+        .sidebar {
+            display: inline-block;
+            width: 20%;
+            background-color: #e3f2fd;
+            padding: 20px;
+            border: 2px solid #2196f3;
+            border-radius: 8px;
+            margin-right: 2%;
+            vertical-align: top;
+            font-size: 16px; 
+        }
+
+        .main-content {
+            display: inline-block;
+            width: 56%;
+            background-color: #fce4ec;
+            padding: 20px;
+            border: 2px solid #e91e63;
+            border-radius: 8px;
+            margin-right: 2%;
+            vertical-align: top;
+            font-size: 16px; 
+        }
+
+        .advertisement {
+            display: inline-block;
+            width: 20%;
+            background-color: #e8f5e9;
+            padding: 20px;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+            vertical-align: top;
+            font-size: 16px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid;
+            padding-bottom: 10px;
+        }
+
+        .sidebar h2 {
+            border-color: #2196f3;
+        }
+
+        .main-content h2 {
+            border-color: #e91e63;
+        }
+
+        .advertisement h2 {
+            border-color: #4caf50;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .article {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+
+        .article:last-child {
+            border-bottom: none;
+        }
+
+        .ad-box {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .ad-box:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>News Portal</h1>
+    
+    <div class="container">
+        <!-- Sidebar Section -->
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li>World News</li>
+                <li>Politics</li>
+                <li>Technology</li>
+                <li>Sports</li>
+                <li>Entertainment</li>
+                <li>Business</li>
+            </ul>
+        </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <h2>Latest News</h2>
+            
+            <div class="article">
+                <h3>Global Climate Summit Reaches Historic Agreement</h3>
+                <p>World leaders have reached a groundbreaking agreement at the latest climate summit, committing to reduce carbon emissions by 50% by 2030. The deal includes substantial funding for renewable energy projects in developing nations.</p>
+            </div>
+
+            <div class="article">
+                <h3>National Team Secures Championship Victory</h3>
+                <p>In a thrilling final match, the national football team clinched the international championship title after a dramatic penalty shootout. Fans across the country celebrated the historic win throughout the night.</p>
+            </div>
+        </div>
+
+        <!-- Advertisement Section -->
+        <div class="advertisement">
+            <h2>Advertisements</h2>
+            
+            <div class="ad-box">
+                <h4>Premium Subscription</h4>
+                <p>Get access to exclusive content and ad-free experience. Subscribe now for only $9.99/month!</p>
+            </div>
+
+            <div class="ad-box">
+                <h4>Summer Sale</h4>
+                <p>Up to 60% off on all electronics. Limited time offer! Shop now and save big.</p>
+            </div>
+
+            <div class="ad-box">
+                <h4>Job Opportunities</h4>
+                <p>Join our team! We're hiring software developers, designers, and content writers.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
